@@ -24,6 +24,9 @@ target = "/"
 source = "../SkipIntro/bin/Release/netstandard2.1/wwwDayDream.SkipIntro.dll"
 target = "/BepInEx/plugins/SkipIntro/"
 [[build.copy]]
+source = "../SkipIntro/bin/Release/netstandard2.1/FSharp.Core.dll"
+target = "/BepInEx/core/"
+[[build.copy]]
 source = "../LICENSE"
 target = "/BepInEx/plugins/SkipIntro/"
 
