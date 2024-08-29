@@ -1,0 +1,29 @@
+[config]
+schemaVersion = "0.0.1"
+
+[general]
+repository = "https://thunderstore.io"
+
+[package]
+namespace = "www_Day_Dream"
+name = "SkipIntro"
+description = "Skips the preloading and intro scenes to go straight to the main menu."
+containsNsfwContent = false
+[package.dependencies]
+BepInEx-BepInExPack = "5.4.2100"
+
+[build]
+icon = "icon.png"
+readme = "../README.md"
+outdir = "../dist"
+
+[[build.copy]]
+source = "../SkipIntro/bin/Release/netstandard2.1/wwwDayDream.SkipIntro.dll"
+target = "/BepInEx/plugins/SkipIntro/"
+
+# "bepinex", "clientside" 
+[publish]
+communities = [ "shapez-2" ]
+[publish.categories]
+shapez-2 = [ "mods" ]
+# For a list of valid tags, look at the slug values in https://thunderstore.io/api/experimental/community/content-warning/category/

@@ -1,0 +1,27 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <GenerateDocumentationFile>true</GenerateDocumentationFile>
+
+        <UnityVersion>2022.3.10</UnityVersion>
+    </PropertyGroup>
+    
+    <ItemGroup Label="ShoddyGameLibs References">
+        <PackageReference Include="ShoddyGameLibs" Version="1.4.6"
+                          GameFilesDir="$(STEAMAPPS)shapez 2"
+                          BuildGameLibs="false" BuildFromGameLibs="false"/>
+        <Reference Include="MainMenuAssembly" ShoddyGameLib="true"/>
+        <Reference Include="SPZGameAssembly" ShoddyGameLib="true"/>
+        <Reference Include="Core" ShoddyGameLib="true"/>
+        <Reference Include="Unity.Core" ShoddyGameLib="true"/>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="Operators.fs" />
+      <Compile Include="SkipIntroPlugin.fs" />
+    </ItemGroup>
+
+    <Import Project="../Common.FS.props"/>
+    <Import Project="../Common.FS.targets"/>
+</Project>
