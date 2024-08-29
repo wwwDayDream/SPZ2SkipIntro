@@ -18,12 +18,16 @@ readme = "../README.md"
 outdir = "../dist"
 
 [[build.copy]]
+source = "../CHANGELOG.md"
+target = "/"
+[[build.copy]]
 source = "../SkipIntro/bin/Release/netstandard2.1/wwwDayDream.SkipIntro.dll"
 target = "/BepInEx/plugins/SkipIntro/"
+[[build.copy]]
+source = "../LICENSE"
+target = "/BepInEx/plugins/SkipIntro/"
 
-# "bepinex", "clientside" 
 [publish]
 communities = [ "shapez-2" ]
 [publish.categories]
 shapez-2 = [ "mods" ]
-# For a list of valid tags, look at the slug values in https://thunderstore.io/api/experimental/community/content-warning/category/
