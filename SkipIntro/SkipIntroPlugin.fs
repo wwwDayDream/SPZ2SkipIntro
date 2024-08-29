@@ -16,7 +16,7 @@ module SkipIntro =
 
 open SkipIntro
 
-[<BepInPlugin("wwwDayDream.SkipIntro", "SkipIntro", "0.0.1")>]
+[<BepInPlugin("wwwDayDream.SkipIntro", "SkipIntro", "0.0.2")>]
 type SkipIntroPlugin() =
     inherit BaseUnityPlugin()
     
